@@ -102,3 +102,48 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# dependencies
+/front-end//node_modules
+
+# profiling files
+chrome-profiler-events.json
+speed-measure-plugin.json
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+/front-end//.sass-cache
+/front-end//connect.lock
+/front-end//coverage
+/libpeerconnection.log
+/front-end/npm-debug.log
+/front-end/yarn-error.log
+/front-end/testem.log
+/front-end//typings
+
+# System Files
+/front-end/.DS_Store
+/front-end/Thumbs.db
