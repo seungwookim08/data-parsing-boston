@@ -4,7 +4,7 @@ import numpy as np
 
 class DataParser:
   def __init__(self):
-    self.file_name = 'parsed_result.csv'
+    self.file_name = 'parsed_result-demo.csv'
     self.kijiji_url =  'https://www.kijiji.ca/b-a-louer/ville-de-montreal/c30349001l1700281'
 
   def data_parse(self):
@@ -87,6 +87,7 @@ class DataParser:
 
     df = df.groupby('Postal Code', as_index=False).mean()
     df = df[df['Price'] > 500]  
+    df = df[df['Price'] < 3000]  
 
     df.to_csv(self.file_name.replace('.csv', '_price_by_postal.csv'), index=False)
     df.to_csv('./front-end/src/assets/parsed_result.csv', index=False)
